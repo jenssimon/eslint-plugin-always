@@ -32,7 +32,7 @@ $ yarn add eslint-plugin-always --dev
 
 ## Usage
 
-Add the plugin to your ´eslintrc.json´:
+Add the plugin to your `eslintrc.json`:
 
 ```json
 {
