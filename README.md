@@ -60,7 +60,7 @@ MIT © 2020 [Jens Simon](https://github.com/jenssimon)
 
 [npm-url]: https://www.npmjs.com/package/eslint-plugin-always
 [npm-image]: https://badgen.net/npm/v/eslint-plugin-always
-[npm-downloads-image]: https://badgen.net/npm/dt/eslint-plugin-always
+[npm-downloads-image]: https://badgen.net/npm/dw/eslint-plugin-always
 
 [deps-url]: https://david-dm.org/jenssimon/eslint-plugin-always
 [deps-image]: https://badgen.net/david/dep/jenssimon/eslint-plugin-always
