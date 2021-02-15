@@ -56,7 +56,7 @@ And then add the following rule:
 
 ## License
 
-MIT © 2020 [Jens Simon](https://github.com/jenssimon)
+MIT © 2021 [Jens Simon](https://github.com/jenssimon)
 
 [npm-url]: https://www.npmjs.com/package/eslint-plugin-always
 [npm-image]: https://badgen.net/npm/v/eslint-plugin-always
