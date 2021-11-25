@@ -2,7 +2,6 @@ sudo: false
 language: node_js
 node_js:
   - "14"
-cache:
-  - yarn: true
+cache: yarn
 script:
   - yarn lint

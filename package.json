@@ -2,7 +2,7 @@
   "name": "eslint-plugin-always",
   "version": "1.0.1",
   "description": "ESLint plugin that always reports with configurable message",
-  "main": "index.js",
+  "main": "dist/index.js",
   "author": "Jens Simon",
   "license": "MIT",
   "private": false,
@@ -11,24 +11,46 @@
     "type": "git",
     "url": "https://github.com/jenssimon/eslint-plugin-always.git"
   },
+  "type": "commonjs",
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "types": "dist/index.d.ts",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
+  "engines": {
+    "node": ">=12"
+  },
   "devDependencies": {
     "@jenssimon/eslint-config-base": "^5.0.0",
-    "eslint": "^8.2.0"
+    "@jenssimon/eslint-config-typescript": "^3.1.3",
+    "@types/eslint": "^8.2.0",
+    "eslint": "^8.3.0",
+    "typescript": "^4.5.2"
   },
   "peerDependencies": {
     "eslint": ">=1.0.0"
   },
   "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
     "extends": [
-      "@jenssimon/base"
-    ]
+      "@jenssimon/base",
+      "@jenssimon/typescript"
+    ],
+    "rules": {
+      "@typescript-eslint/naming-convention": "off"
+    }
   },
   "scripts": {
-    "lint": "eslint --fix ./"
+    "lint": "eslint --fix --ext .js,.ts ./ && tsc --noEmit",
+    "build": "tsc",
+    "prepublishOnly": "tsc"
   }
 }
