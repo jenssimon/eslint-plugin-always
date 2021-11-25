@@ -1,4 +1,4 @@
-[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url] [![Dependencies][deps-image]][deps-url] [![star this repo][gh-stars-image]][gh-url] [![fork this repo][gh-forks-image]][gh-url] [![Build Status][travis-image]][travis-url] ![Code Style][codestyle-image]
+[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url] [![star this repo][gh-stars-image]][gh-url] [![fork this repo][gh-forks-image]][gh-url] [![Build Status][travis-image]][travis-url] ![Code Style][codestyle-image]
 
 # eslint-plugin-always
 
@@ -32,7 +32,7 @@ $ yarn add eslint-plugin-always --dev
 
 ## Usage
 
-Add the plugin to your `eslintrc.json`:
+Add the plugin to your ESLint configuration:
 
 ```json
 {
@@ -61,9 +61,6 @@ MIT © 2021 [Jens Simon](https://github.com/jenssimon)
 [npm-url]: https://www.npmjs.com/package/eslint-plugin-always
 [npm-image]: https://badgen.net/npm/v/eslint-plugin-always
 [npm-downloads-image]: https://badgen.net/npm/dw/eslint-plugin-always
-
-[deps-url]: https://david-dm.org/jenssimon/eslint-plugin-always
-[deps-image]: https://badgen.net/david/dep/jenssimon/eslint-plugin-always
 
 [gh-url]: https://github.com/jenssimon/eslint-plugin-always
 [gh-stars-image]: https://badgen.net/github/stars/jenssimon/eslint-plugin-always
