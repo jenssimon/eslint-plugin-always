@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-always",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "ESLint plugin that always reports with configurable message",
   "main": "dist/index.js",
   "author": "Jens Simon",
