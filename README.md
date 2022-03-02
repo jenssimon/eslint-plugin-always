@@ -1,4 +1,4 @@
-[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url] [![star this repo][gh-stars-image]][gh-url] [![fork this repo][gh-forks-image]][gh-url] [![Build Status][travis-image]][travis-url] ![Code Style][codestyle-image]
+[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url] [![star this repo][gh-stars-image]][gh-url] [![fork this repo][gh-forks-image]][gh-url] [![Build Status][gh-status-image]][gh-url]
 
 # eslint-plugin-always
 
@@ -65,8 +65,4 @@ MIT © 2022 [Jens Simon](https://github.com/jenssimon)
 [gh-url]: https://github.com/jenssimon/eslint-plugin-always
 [gh-stars-image]: https://badgen.net/github/stars/jenssimon/eslint-plugin-always
 [gh-forks-image]: https://badgen.net/github/forks/jenssimon/eslint-plugin-always
-
-[travis-url]: https://travis-ci.com/jenssimon/eslint-plugin-always
-[travis-image]: https://travis-ci.com/jenssimon/eslint-plugin-always.svg?branch=master
-
-[codestyle-image]: https://badgen.net/badge/code%20style/airbnb/f2a
+[gh-status-image]: https://badgen.net/github/status/jenssimon/eslint-plugin-always
