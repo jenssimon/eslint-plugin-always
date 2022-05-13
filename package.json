@@ -56,5 +56,5 @@
     "ci:lint": "eslint ./",
     "ci:tsc": "tsc --noEmit"
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.1"
 }
