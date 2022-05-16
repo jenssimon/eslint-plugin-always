@@ -52,9 +52,9 @@
     "lint": "eslint --fix --ext .js,.ts ./ && tsc --noEmit",
     "build": "tsc",
     "prepublishOnly": "tsc",
-    "ci": "run-s \"ci:*\"",
-    "ci:lint": "eslint ./",
-    "ci:tsc": "tsc --noEmit"
+    "ci-test": "run-s \"ci-test:*\"",
+    "ci-test:lint": "eslint ./",
+    "ci-test:tsc": "tsc --noEmit"
   },
   "packageManager": "yarn@3.2.1"
 }
