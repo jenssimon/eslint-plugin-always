@@ -60,7 +60,11 @@
     "prepublishOnly": "tsc",
     "ci-test": "run-s \"ci-test:*\"",
     "ci-test:lint": "eslint ./",
-    "ci-test:tsc": "tsc --noEmit"
+    "ci-test:tsc": "tsc --noEmit",
+    "commit": "cz",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "packageManager": "yarn@3.2.1",
   "config": {
