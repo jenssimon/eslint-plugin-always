@@ -68,7 +68,7 @@
     "postpack": "pinst --enable",
     "semantic-release": "semantic-release"
   },
-  "packageManager": "yarn@3.2.2",
+  "packageManager": "yarn@3.2.3",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
