@@ -26,10 +26,10 @@
     "node": ">=12"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.1.2",
-    "@commitlint/config-conventional": "17.1.0",
+    "@commitlint/cli": "17.2.0",
+    "@commitlint/config-conventional": "17.2.0",
     "@jenssimon/eslint-config-base": "6.4.3",
-    "@jenssimon/eslint-config-typescript": "3.6.8",
+    "@jenssimon/eslint-config-typescript": "3.6.9",
     "@types/eslint": "8.4.9",
     "@types/node": "18.11.8",
     "commitizen": "4.2.5",
