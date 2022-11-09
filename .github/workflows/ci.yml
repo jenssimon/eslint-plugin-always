@@ -4,7 +4,7 @@ on:
   push:
     branches: [ '**' ]
   pull_request:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   pre_job:
@@ -35,7 +35,6 @@ jobs:
         yarn ci-test
   release:
     needs: [build]
-    if: ${{ needs.pre_job.outputs.needs_run == 'true' || (github.event_name == 'push' && contains('refs/heads/master refs/heads/main', github.ref)) }}
     runs-on: ubuntu-latest
     steps:
         - uses: actions/checkout@v3

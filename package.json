@@ -79,5 +79,10 @@
   },
   "lint-staged": {
     "**/*.{js,ts}": "eslint"
+  },
+  "release": {
+    "branches": [
+      "main"
+    ]
   }
 }
