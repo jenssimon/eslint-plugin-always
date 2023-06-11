@@ -23,7 +23,7 @@
     "eslint-plugin"
   ],
   "engines": {
-    "node": ">=12"
+    "node": ">=16"
   },
   "devDependencies": {
     "@commitlint/cli": "17.6.6",
