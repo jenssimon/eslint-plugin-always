@@ -55,7 +55,8 @@
       "@jenssimon/typescript"
     ],
     "rules": {
-      "@typescript-eslint/naming-convention": "off"
+      "@typescript-eslint/naming-convention": "off",
+      "semi": ["error", "never"]
     }
   },
   "scripts": {
