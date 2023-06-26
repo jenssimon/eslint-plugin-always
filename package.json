@@ -55,12 +55,11 @@
       "@jenssimon/typescript"
     ],
     "rules": {
-      "@typescript-eslint/naming-convention": "off",
-      "semi": ["error", "never"]
+      "@typescript-eslint/naming-convention": "off"
     }
   },
   "scripts": {
-    "lint": "eslint --fix --ext .js,.ts ./ && tsc --noEmit",
+    "lint": "eslint --fix --ext .js,.ts,.cjs,.mjs,.cts,.mts ./ && tsc --noEmit",
     "build": "tsc",
     "prepublishOnly": "tsc",
     "ci-test": "run-s \"ci-test:*\"",
