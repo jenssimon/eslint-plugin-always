@@ -1,4 +1,4 @@
-import always from './rules/always'
+import always from './rules/always.js'
 
 export = {
   rules: {
