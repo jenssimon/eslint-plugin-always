@@ -1111,10 +1111,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.17.8":
-  version: 18.17.8
-  resolution: "@types/node@npm:18.17.8"
-  checksum: ebb71526368c9c58f03e2c2408bfda4aa686c13d84226e2c9b48d9c4aee244fb82e672aaf4aa8ccb6e4993b4274d5f4b2b3d52d0a2e57ab187ae653903376411
+"@types/node@npm:18.17.9":
+  version: 18.17.9
+  resolution: "@types/node@npm:18.17.9"
+  checksum: 0d5835710e49a654a1ca34167e7cd504cc709c006006ebe9b23c360dac5637c6c4f1b4f3aff33df1b7f9debfb9ad8bd81da2fc4540970d2ad56eb479cda77613
   languageName: node
   linkType: hard
 
@@ -3196,7 +3196,7 @@ __metadata:
     "@jenssimon/eslint-config-base": 7.1.9
     "@jenssimon/eslint-config-typescript": 5.1.4
     "@types/eslint": 8.44.2
-    "@types/node": 18.17.8
+    "@types/node": 18.17.9
     commitizen: 4.3.0
     cz-conventional-changelog: 3.3.0
     eslint: 8.47.0
@@ -3204,7 +3204,7 @@ __metadata:
     lint-staged: 14.0.1
     npm-run-all: 4.1.5
     pinst: 3.0.0
-    semantic-release: 21.0.9
+    semantic-release: 21.1.0
     ts-node: 10.9.1
     typescript: 5.1.6
   peerDependencies:
@@ -7938,9 +7938,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semantic-release@npm:21.0.9":
-  version: 21.0.9
-  resolution: "semantic-release@npm:21.0.9"
+"semantic-release@npm:21.1.0":
+  version: 21.1.0
+  resolution: "semantic-release@npm:21.1.0"
   dependencies:
     "@semantic-release/commit-analyzer": ^10.0.0
     "@semantic-release/error": ^4.0.0
@@ -7972,7 +7972,7 @@ __metadata:
     yargs: ^17.5.1
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: 7da69393519da1ca6f14b29c38135f5fa48bd241da07eb0705da10a1707021a935960234ada8d0e7d49b8f63c00e1001cfb93683e0d8dbe89379d4857bcfc7ef
+  checksum: f232984072808bd6b3423f3e0dfc220484beba979688791c78a8dbfbb773230672e9cef0d3681592140d98c4e84b5060652fb86a0310f00a22ed949e968deb3f
   languageName: node
   linkType: hard
 
