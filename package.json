@@ -26,22 +26,21 @@
     "node": ">=16"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.8.0",
-    "@commitlint/config-conventional": "17.8.0",
-    "@jenssimon/eslint-config-base": "7.2.6",
-    "@jenssimon/eslint-config-typescript": "5.1.12",
-    "@types/eslint": "8.44.4",
-    "@types/node": "18.18.5",
-    "commitizen": "4.3.0",
-    "cz-conventional-changelog": "3.3.0",
-    "eslint": "8.51.0",
-    "husky": "8.0.3",
-    "lint-staged": "15.0.1",
-    "npm-run-all": "4.1.5",
-    "pinst": "3.0.0",
-    "semantic-release": "22.0.5",
-    "ts-node": "10.9.1",
-    "typescript": "5.2.2"
+    "@commitlint/cli": "^17.8.0",
+    "@commitlint/config-conventional": "^17.8.0",
+    "@jenssimon/eslint-config-base": "^7.3.0",
+    "@jenssimon/eslint-config-typescript": "^5.2.0",
+    "@types/eslint": "^8.44.4",
+    "@types/node": "^18.18.5",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.51.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.0.1",
+    "pinst": "^3.0.0",
+    "semantic-release": "^22.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   },
   "peerDependencies": {
     "eslint": ">=1.0.0"
@@ -59,12 +58,9 @@
     }
   },
   "scripts": {
-    "lint": "eslint --fix --ext .js,.ts,.cjs,.mjs,.cts,.mts ./ && tsc --noEmit",
+    "lint": "eslint --ext .js,.ts,.cjs,.mjs,.cts,.mts ./",
     "build": "tsc",
     "prepublishOnly": "tsc",
-    "ci-test": "run-s \"ci-test:*\"",
-    "ci-test:lint": "eslint ./",
-    "ci-test:tsc": "tsc --noEmit",
     "commit": "cz",
     "postinstall": "husky install",
     "prepack": "pinst --disable",
