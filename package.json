@@ -35,7 +35,7 @@
     "commitizen": "^4.3.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.52.0",
-    "husky": "^8.0.3",
+    "husky": "^9.0.0",
     "lint-staged": "^15.0.2",
     "pinst": "^3.0.0",
     "semantic-release": "^23.0.0",
