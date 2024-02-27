@@ -55,7 +55,15 @@
     ],
     "rules": {
       "@typescript-eslint/naming-convention": "off"
-    }
+    },
+    "overrides": [
+      {
+        "files": ["commitlint.config.js"],
+        "rules": {
+          "unicorn/prefer-module": "off"
+        }
+      }
+    ]
   },
   "scripts": {
     "lint": "eslint --ext .js,.ts,.cjs,.mjs,.cts,.mts ./",
