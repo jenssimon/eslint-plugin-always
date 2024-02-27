@@ -12,7 +12,7 @@
   },
   "include": [
     "src/**/*.ts",
-    "commitlint.config.cjs"
+    "commitlint.config.js"
   ],
   "exclude": [
     "node_modules",
