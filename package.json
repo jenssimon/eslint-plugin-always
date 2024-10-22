@@ -58,7 +58,9 @@
     },
     "overrides": [
       {
-        "files": ["commitlint.config.js"],
+        "files": [
+          "commitlint.config.js"
+        ],
         "rules": {
           "unicorn/prefer-module": "off"
         }
@@ -66,7 +68,7 @@
     ]
   },
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.cjs,.mjs,.cts,.mts ./",
+    "lint": "eslint",
     "build": "tsc",
     "prepublishOnly": "tsc",
     "commit": "cz",
@@ -75,7 +77,7 @@
     "postpack": "pinst --enable",
     "semantic-release": "semantic-release"
   },
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "yarn@4.5.1",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
