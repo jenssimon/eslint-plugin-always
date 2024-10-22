@@ -58,7 +58,9 @@
     },
     "overrides": [
       {
-        "files": ["commitlint.config.js"],
+        "files": [
+          "commitlint.config.js"
+        ],
         "rules": {
           "unicorn/prefer-module": "off"
         }
@@ -66,7 +68,7 @@
     ]
   },
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.cjs,.mjs,.cts,.mts ./",
+    "lint": "eslint",
     "build": "tsc",
     "prepublishOnly": "tsc",
     "commit": "cz",
