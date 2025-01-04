@@ -12,7 +12,8 @@
   },
   "include": [
     "src/**/*.ts",
-    "commitlint.config.js"
+    "commitlint.config.mjs",
+    "eslint.config.mjs"
   ],
   "exclude": [
     "node_modules",
