@@ -28,6 +28,8 @@
   "devDependencies": {
     "@commitlint/cli": "^19.0.0",
     "@commitlint/config-conventional": "^19.0.0",
+    "@eslint/compat": "^1.2.4",
+    "@eslint/eslintrc": "^3.2.0",
     "@jenssimon/eslint-config-base": "^8.0.0",
     "@jenssimon/eslint-config-typescript": "^5.2.2",
     "@types/eslint": "^9.0.0",
@@ -45,30 +47,8 @@
   "peerDependencies": {
     "eslint": ">=1.0.0"
   },
-  "eslintConfig": {
-    "parserOptions": {
-      "project": "./tsconfig.json"
-    },
-    "extends": [
-      "@jenssimon/base",
-      "@jenssimon/typescript"
-    ],
-    "rules": {
-      "@typescript-eslint/naming-convention": "off"
-    },
-    "overrides": [
-      {
-        "files": [
-          "commitlint.config.js"
-        ],
-        "rules": {
-          "unicorn/prefer-module": "off"
-        }
-      }
-    ]
-  },
   "scripts": {
-    "lint": "eslint",
+    "lint": "eslint ./",
     "build": "tsc",
     "prepublishOnly": "tsc",
     "commit": "cz",

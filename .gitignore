@@ -8,3 +8,6 @@ dist/
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+.yalc/
+yalc.lock
