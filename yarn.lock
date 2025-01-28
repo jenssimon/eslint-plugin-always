@@ -1781,8 +1781,8 @@ __metadata:
   linkType: hard
 
 "@jenssimon/eslint-config-typescript@npm:^5.2.2":
-  version: 5.3.37
-  resolution: "@jenssimon/eslint-config-typescript@npm:5.3.37"
+  version: 5.3.38
+  resolution: "@jenssimon/eslint-config-typescript@npm:5.3.38"
   dependencies:
     "@stylistic/eslint-plugin-ts": "npm:^3.0.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.0.0"
@@ -1791,7 +1791,7 @@ __metadata:
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0
     typescript: ">=4.0.0"
-  checksum: 10c0/f8a8fc8bda6fea1d5cc7717a39fd230d3e0bb80a207e5be6bbc3b3ee6e22c95c90afd952947290f79a64dcaa6e4c36107688d1bd5849a175fb65cf13f228bd9d
+  checksum: 10c0/01b856b95acb392eed0f947d291e1e17b42b5fa6a2f5e1bf994ff0511d5c12ae99be852e9f93f419fbc5552351e816856f1e5476f9985d9c8ebe339a5f3cb4c8
   languageName: node
   linkType: hard
 
@@ -2602,11 +2602,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*, @types/node@npm:^22.0.0":
-  version: 22.10.10
-  resolution: "@types/node@npm:22.10.10"
+  version: 22.12.0
+  resolution: "@types/node@npm:22.12.0"
   dependencies:
     undici-types: "npm:~6.20.0"
-  checksum: 10c0/3425772d4513cd5dbdd87c00acda088113c03a97445f84f6a89744c60a66990b56c9d3a7213d09d57b6b944ae8ff45f985565e0c1846726112588e33a22dd12b
+  checksum: 10c0/be220706732d95db2ed1c441c1e64cab90bf9a47519ce6f4c79cc5a9ec9d5c517131a149a9ac30afac1a30103e67e3a00d453ba7c1b0141608a3a7ba6397c303
   languageName: node
   linkType: hard
 
