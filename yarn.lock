@@ -1781,8 +1781,8 @@ __metadata:
   linkType: hard
 
 "@jenssimon/eslint-config-typescript@npm:^5.2.2":
-  version: 5.3.41
-  resolution: "@jenssimon/eslint-config-typescript@npm:5.3.41"
+  version: 5.3.42
+  resolution: "@jenssimon/eslint-config-typescript@npm:5.3.42"
   dependencies:
     "@stylistic/eslint-plugin-ts": "npm:^3.0.0"
     "@typescript-eslint/eslint-plugin": "npm:^8.0.0"
@@ -1791,7 +1791,7 @@ __metadata:
   peerDependencies:
     eslint: ^7.0.0 || ^8.0.0
     typescript: ">=4.0.0"
-  checksum: 10c0/4f4cf7b0a4a4f924b5cd663b2ed825784776ec5333d8e82f395861d49aa73adb03f986970791e2d2b4ae245816f136ca99f9adf6ebabd2ac304c99708311c5f2
+  checksum: 10c0/712cee4b7f73bdb0b25fea1eaa36c9e88d72de3814efe99341be2df55c5d3d523f0264d5bc7c9d5426802e7dbd7f96aea95b9322670a022de6a5d36570b41b96
   languageName: node
   linkType: hard
 
@@ -9029,8 +9029,8 @@ __metadata:
   linkType: hard
 
 "semantic-release@npm:^24.0.0":
-  version: 24.2.1
-  resolution: "semantic-release@npm:24.2.1"
+  version: 24.2.2
+  resolution: "semantic-release@npm:24.2.2"
   dependencies:
     "@semantic-release/commit-analyzer": "npm:^13.0.0-beta.1"
     "@semantic-release/error": "npm:^4.0.0"
@@ -9063,7 +9063,7 @@ __metadata:
     yargs: "npm:^17.5.1"
   bin:
     semantic-release: bin/semantic-release.js
-  checksum: 10c0/c27b187e84b3410e1fd3c9c8d92fad7b4905e6d8719c75f03e684d1ca1d1bf2c843e4e12a0cf54cd6292608af3c50ac17ff9e383add2619dbd0d643a77424ae4
+  checksum: 10c0/82b3f4654badbb80bf20be563ab232531aa721b1aeb17b9e24edf68dc0a6d1c7e10eddb38b6d2eb059ae5c09b6026787743a2f41eaccf0febb7bedebffa7c479
   languageName: node
   linkType: hard
 
