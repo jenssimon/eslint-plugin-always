@@ -491,8 +491,8 @@ __metadata:
   linkType: hard
 
 "@jenssimon/eslint-config-base@npm:^10.0.0":
-  version: 10.0.1
-  resolution: "@jenssimon/eslint-config-base@npm:10.0.1"
+  version: 10.0.2
+  resolution: "@jenssimon/eslint-config-base@npm:10.0.2"
   peerDependencies:
     "@eslint-community/eslint-plugin-eslint-comments": ">= 4"
     eslint: ">= 9"
@@ -501,7 +501,7 @@ __metadata:
     eslint-plugin-promise: ">= 7"
     eslint-plugin-sonarjs: ">= 3"
     eslint-plugin-unicorn: ">= 62"
-  checksum: 10c0/034efecc93989863df321f38df6f75faa0fc1f69af6ab3ae78ddb25e415c8759694ceafc0734c42adfe00514641fb3eddb441cf3458525878c21a823ebe69e9d
+  checksum: 10c0/1b3667ec37288bb930b483a3f1c00170087507f682448a4783f85048dc71e2ca7f7a9bfb9280ec077dac252e57dd0ccfa389c29ae26ad56b45319b56f20d3a9d
   languageName: node
   linkType: hard
 
