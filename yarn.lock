@@ -1396,7 +1396,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@stylistic/eslint-plugin@npm:^5.5.0, @stylistic/eslint-plugin@npm:^5.6.1":
+"@stylistic/eslint-plugin@npm:^5.6.1":
   version: 5.6.1
   resolution: "@stylistic/eslint-plugin@npm:5.6.1"
   dependencies:
@@ -3492,16 +3492,13 @@ __metadata:
     "@eslint/compat": "npm:^2.0.0"
     "@eslint/js": "npm:^9.39.1"
     "@jenssimon/eslint-config-base": "npm:^10.0.0"
-    "@stylistic/eslint-plugin": "npm:^5.5.0"
     "@types/eslint": "npm:^9.0.0"
     "@types/node": "npm:^24.0.0"
     commitizen: "npm:^4.3.0"
     cz-conventional-changelog: "npm:^3.3.0"
     eslint: "npm:^9.39.1"
     eslint-config-airbnb-extended: "npm:^3.0.0"
-    eslint-import-resolver-typescript: "npm:^4.4.4"
     eslint-plugin-import-esm: "npm:^3.0.1"
-    eslint-plugin-import-x: "npm:^4.16.1"
     eslint-plugin-promise: "npm:^7.2.1"
     eslint-plugin-sonarjs: "npm:^3.0.5"
     eslint-plugin-unicorn: "npm:^62.0.0"
@@ -3510,7 +3507,6 @@ __metadata:
     pinst: "npm:^3.0.0"
     semantic-release: "npm:^25.0.0"
     typescript: "npm:^5.2.2"
-    typescript-eslint: "npm:^8.46.3"
   peerDependencies:
     eslint: ">=1.0.0"
   languageName: unknown
@@ -8635,7 +8631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript-eslint@npm:^8.46.3, typescript-eslint@npm:^8.51.0":
+"typescript-eslint@npm:^8.51.0":
   version: 8.51.0
   resolution: "typescript-eslint@npm:8.51.0"
   dependencies:
