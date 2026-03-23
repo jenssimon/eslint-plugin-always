@@ -41,7 +41,7 @@
     "lint-staged": "^16.0.0",
     "pinst": "^3.0.0",
     "semantic-release": "^25.0.0",
-    "typescript": "^5.2.2"
+    "typescript": "^6.0.0"
   },
   "peerDependencies": {
     "eslint": ">=1.0.0"
