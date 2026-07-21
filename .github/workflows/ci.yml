@@ -2,51 +2,61 @@ name: CI
 
 on:
   push:
-    branches: [ '**' ]
+    branches: ["**"]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   id-token: write
   contents: write
 
 jobs:
-  build:
+  validate:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
     steps:
-    - uses: actions/checkout@v7
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
 
-    - name: Use Node.js
-      uses: actions/setup-node@v7
-      with:
-        node-version-file: '.nvmrc'
-        cache: 'yarn'
+      - name: Set up Vite+
+        uses: voidzero-dev/setup-vp@v1
+        with:
+          cache: true
+          run-install: true
 
-    - name: Install dependencies
-      run: yarn
+      - name: Run checks
+        run: vp check
 
-    - name: Lint
-      run: yarn lint
+      - name: Run tests
+        run: vp test
 
-    - name: TypeScript
-      run: yarn tsc --noEmit
+      - name: Run builds
+        run: vp pack
 
   release:
-    needs: [build]
+    needs: [validate]
     if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v7
+      - name: Checkout
+        uses: actions/checkout@v7
         with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v7
+          persist-credentials: false
+
+      - name: Set up Vite+
+        uses: voidzero-dev/setup-vp@v1
         with:
-          node-version-file: .nvmrc
-          cache: 'yarn'
+          cache: true
+          run-install: true
+
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          yarn
+          vp pack
           npx semantic-release

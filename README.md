@@ -1,4 +1,4 @@
-[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url] [![star this repo][gh-stars-image]][gh-url] [![fork this repo][gh-forks-image]][gh-url] [![CI](https://github.com/jenssimon/eslint-plugin-always/actions/workflows/ci.yml/badge.svg)](https://github.com/jenssimon/eslint-plugin-always/actions/workflows/ci.yml)
+[![NPM version][npm-image]][npm-url] [![Downloads][npm-downloads-image]][npm-url]
 
 # eslint-plugin-always
 
@@ -11,7 +11,7 @@ There is a reason why we want to do so! See [Why?](#why)
 ## Installation
 
 ```sh
-$ yarn add eslint-plugin-always --dev
+pnpm add eslint-plugin-always --dev
 ```
 
 ## Usage
@@ -20,9 +20,7 @@ Add the plugin to your ESLint configuration:
 
 ```json
 {
-  "plugins": [
-    "always"
-  ]
+  "plugins": ["always"]
 }
 ```
 
@@ -31,9 +29,12 @@ And then add the following rule:
 ```json
 {
   "rules": {
-    "always/always": ["error", {
-      "message": "Hello World"
-    }]
+    "always/always": [
+      "error",
+      {
+        "message": "Hello World"
+      }
+    ]
   }
 }
 ```
@@ -73,13 +74,14 @@ For a new package `cartidges/int_new` a valid ESLint configuration **must** be a
 ```json
 {
   "root": true,
-  "plugins": [
-    "always"
-  ],
+  "plugins": ["always"],
   "rules": {
-    "always/always": ["error", {
-      "message": "No ESLint config found. Please add one or ignore the cartridge."
-    }]
+    "always/always": [
+      "error",
+      {
+        "message": "No ESLint config found. Please add one or ignore the cartridge."
+      }
+    ]
   }
 }
 ```
@@ -93,15 +95,26 @@ For the case that someone adds a subfolder and forgets the ESLint configuration 
 No ESLint config found. Please add one or ignore the cartridge.
 ```
 
-## License
+## Development
 
-MIT © 2023 [Jens Simon](https://github.com/jenssimon)
+- Install dependencies:
+
+```bash
+vp install
+```
+
+- Run the unit tests:
+
+```bash
+vp test
+```
+
+- Build the library:
+
+```bash
+vp pack
+```
 
 [npm-url]: https://www.npmjs.com/package/eslint-plugin-always
 [npm-image]: https://badgen.net/npm/v/eslint-plugin-always
 [npm-downloads-image]: https://badgen.net/npm/dw/eslint-plugin-always
-
-[gh-url]: https://github.com/jenssimon/eslint-plugin-always
-[gh-stars-image]: https://badgen.net/github/stars/jenssimon/eslint-plugin-always
-[gh-forks-image]: https://badgen.net/github/forks/jenssimon/eslint-plugin-always
-[gh-status-image]: https://badgen.net/github/status/jenssimon/eslint-plugin-always

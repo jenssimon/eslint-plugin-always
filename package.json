@@ -1,69 +1,69 @@
 {
   "name": "eslint-plugin-always",
-  "version": "0.0.0-development",
+  "version": "0.0.0",
   "description": "ESLint plugin that always reports with configurable message",
-  "main": "dist/index.js",
-  "author": "Jens Simon",
-  "license": "MIT",
-  "homepage": "https://github.com/jenssimon/eslint-plugin-always#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jenssimon/eslint-plugin-always.git"
-  },
-  "type": "commonjs",
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "types": "dist/index.d.ts",
   "keywords": [
     "eslint",
-    "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "eslintplugin"
   ],
-  "engines": {
-    "node": ">=16"
+  "homepage": "https://github.com/jenssimon/eslint-plugin-always#readme",
+  "bugs": {
+    "url": "https://github.com/jenssimon/eslint-plugin-always/issues"
   },
-  "devDependencies": {
-    "@commitlint/cli": "^21.0.0",
-    "@commitlint/config-conventional": "^21.0.0",
-    "@eslint/config-helpers": "^0.6.0",
-    "@eslint/js": "^10.0.0",
-    "@jenssimon/eslint-config-base": "^10.0.0",
-    "@types/eslint": "^9.0.0",
-    "@types/node": "^24.0.0",
-    "commitizen": "^4.3.0",
-    "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^10.0.0",
-    "eslint-config-airbnb-extended": "^3.0.0",
-    "husky": "^9.0.0",
-    "lint-staged": "^17.0.0",
-    "pinst": "^3.0.0",
-    "semantic-release": "^25.0.0",
-    "typescript": "^6.0.0"
+  "license": "MIT",
+  "author": "Jens Simon <https://github.com/jenssimon>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenssimon/eslint-plugin-always.git"
   },
-  "peerDependencies": {
-    "eslint": ">=1.0.0"
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "scripts": {
-    "lint": "eslint ./",
-    "build": "tsc",
-    "prepublishOnly": "tsc",
-    "commit": "cz",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable",
-    "semantic-release": "semantic-release"
+    "build": "vp pack",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build",
+    "prepare": "vp config"
   },
-  "packageManager": "yarn@4.17.1",
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
+  "devDependencies": {
+    "@types/node": "^26.1.1",
+    "bumpp": "^11.1.0",
+    "typescript": "npm:@typescript/typescript6@^6.0.2",
+    "vite": "catalog:",
+    "vite-plus": "catalog:"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0"
   },
   "release": {
     "branches": [
       "main"
     ]
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "11.15.1",
+      "onFail": "download"
+    }
+  },
+  "engines": {
+    "node": ">=14.17.0"
   }
 }

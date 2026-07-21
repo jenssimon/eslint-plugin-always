@@ -1,6 +1,6 @@
-import always from './rules/always.js'
+import always from "./rules/always.ts"
 
-export = {
+export default {
   rules: {
     always,
   },
