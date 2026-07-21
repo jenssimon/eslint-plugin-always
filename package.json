@@ -38,12 +38,14 @@
     "build": "vp pack",
     "test": "vp test",
     "check": "vp check",
+    "release": "semantic-release",
     "prepublishOnly": "vp run build",
     "prepare": "vp config"
   },
   "devDependencies": {
     "@types/node": "^26.1.1",
     "bumpp": "^11.1.0",
+    "semantic-release": "^24.2.8",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "vite": "catalog:",
     "vite-plus": "catalog:"
