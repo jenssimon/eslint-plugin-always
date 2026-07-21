@@ -32,7 +32,8 @@
     "./package.json": "./package.json"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "scripts": {
     "build": "vp pack",
@@ -45,7 +46,7 @@
   "devDependencies": {
     "@types/node": "^26.1.1",
     "bumpp": "^11.1.0",
-    "semantic-release": "^24.2.8",
+    "semantic-release": "^25.0.8",
     "typescript": "npm:@typescript/typescript6@^6.0.2",
     "vite": "catalog:",
     "vite-plus": "catalog:"
